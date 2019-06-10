@@ -77,7 +77,7 @@ class MainUiClass(QtWidgets.QMainWindow, MainGUI.Ui_MainWindow):
         PAUSE_STYLE = r"""QProgressBar{border: 2px solid grey;border-radius: 5px;text-align: center} QProgressBar::chunk {background-color: #ffdc00}"""
         self.progressBar.setStyleSheet(PAUSE_STYLE)
         self.progressLabel.setText("Cancelling...")
-        time.sleep(2)
+        time.sleep(1)
         QtGui.QGuiApplication.exit()
         
 
