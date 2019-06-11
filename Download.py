@@ -21,7 +21,7 @@ def Download(ch="10000001.jpg"):
     else:
         while True:
             try:
-                r = requests.get("https://ygoprodeck.com/pics/"+ch, timeout=5, stream=True, headers={'User-agent': 'Mozilla/5.0'}) #to allow(else 403 forbidden)
+                r = requests.get("https://storage.googleapis.com/ygoprodeck.com/pics/"+ch, timeout=5, stream=True, headers={'User-agent': 'Mozilla/5.0'}) #to allow(else 403 forbidden)
                 break
             except Exception as ex:
                 print(ex)
